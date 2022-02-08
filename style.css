@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/* CSS till IP, Simon, Marika och Kajsas IT-projekt VT 2022 */
+
+/* Google fonts:
+	Brödtext: font-family: 'Nunito', sans-serif;
+	Rubriker: font-family: 'Roboto', sans-serif; */
+
+/* Färgpalett:
+	Off-white: #FFFCF2
+	Ljusgrå: #F1F0F3
+	Mint: #AAD8BC
+	Rosa: #F784DB
+	Blå: #4C49F3
+	Svart: #252422 */
+
+body {
+	margin: 0%;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	color: #252422;
+	font-size: 1.2vw;
+	line-height: 1.5vw;
+}
+
+/* Behållare för sidebar, main och footer */
+.grid-container1 {
+	display: grid;
+	grid-template-columns: 25% 75%;
+	grid-template-rows: 100% 20%;
+}
+/* Sidebar */
+sidebar {
+	background-color: #FFFCF2;
+	grid-area: 1 / 1 / 2 / 2;
+	height: 100%;
+}
+
+.side-text {
+	padding: 0 5vw;
+	text-align: center;
+}
+
+a.side-link:link{
+	font-family: 'Nunito', sans-serif;
+	font-size: 2vw;
+	color: #252422;
+	text-decoration: none;
+	text-align: left;
+	line-height: 3.5vw;
+}
+
+a.side-link:hover{
+	border-bottom: 5px dotted #252422;
+}
+
+a.side-link:active{
+	color: #252422;
+	border-bottom: 5px dotted #252422;
+}
+
+.logo { /* Logga som används i sidebar och footer, blå*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4em 0 0 0;
+	width: 30%;
+}
+
+.pink-smiley { /* Smiley ikonen i sidebar, rosa */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5em 0;
+	width: 30%;
+}
+
+h1 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 3em;
+	text-align: center;
+	margin: 0;
+	color: #252422;
+}
+/* Main */
+main {
+	background-color: #AAD8BC;
+	background-size: cover;
+	background-image: linear-gradient(to bottom, rgba(170, 216, 188, 0.8), rgba(117, 189, 145, 0.8)), url('bakgrund3.jpeg');
+	grid-area: 1 / 2 / 2 / 3;
+}
+
+/* Inuti main: knappar*/
+h2 a:link {
+	font-family: 'Nunito', sans-serif;
+	font-size: 3vw;
+	color: #252422;
+	text-decoration: none;
+	position: relative;
+	z-index: 3;
+}
+
+h2 a:hover {
+	border-bottom: 7px dotted #252422;
+	position: relative;
+	z-index: 3;
+}
+/* fortsätt fixa koden härifrån */
+
+.button1 { /* Huvudruta för "Quiz" knappen */
+	margin: 12vw 7vw;
+	width: 30vw;
+	height: 2vw;
+	padding: 1vw 1vw 2vw 3vw;
+	position: relative;
+	text-align: center;
+}
+
+
+.button1:before{
+	content: "";
+	width: 110%;
+	height: 160%;
+	background-color: #f784db;
+	border-radius: 3em;
+	border: 5px solid #4C49F3;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	z-index: 1;
+}
+.button1:after{
+	content: "";
+	width: 110%;
+	height: 160%;
+	background-color:  #FFFCF2;
+	border-radius: 3em;
+	border: 5px solid #4C49F3;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+.button2 { /* Huvudruta för "Quiz" knappen */
+	margin: 12vw 25vw;
+	width: 30vw;
+	height: 2vw;
+	padding: 1vw 1vw 4vw 3vw;
+	position: relative;
+	text-align: center;
+}
+
+.button2:before{
+	content: "";
+	width: 110%;
+	height: 160%;
+	background-color: #f784db;
+	border-radius: 3em;
+	border: 5px solid #4C49F3;
+	position: absolute;
+	top: -25px;
+	left: -25px;
+	z-index: 1;
+}
+.button2:after{
+	content: "";
+	width: 110%;
+	height: 160%;
+	background-color:  #FFFCF2;
+	border-radius: 3em;
+	border: 5px solid #4C49F3;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+/* Inuti main: Inforutan (rubrik + informativ text) */
+.info-container { 
+	margin: 30em auto 20em auto;
+	width: 50vw;
+	position: relative;
+}
+
+h3 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 3.5vw;
+	color: #252422;
+	margin-left: 4vw;
+}
+
+.box { /* Huvudruta för inforutan*/
+	width: 90%;
+	height: 80%;
+	position: relative;
+	z-index: 2;
+	padding: 0em 3em;
+}
+.info-container:before{
+	content: "";
+	width: 90%;
+	height: 120%;
+	background-color:  #f784db;
+	padding: 0em 5em 1em 2em;
+	border-radius: 2em;
+	border: 5px solid #4C49F3;
+	position: absolute;
+	top: 75px;
+	left: -25px;
+	z-index: 1;
+}
+.info-container:after{
+	content: "";
+	width: 90%;
+	height: 120%;
+	background-color:  #FFFCF2;
+	padding: 0em 5em 1em 2em;
+	border-radius: 2em;
+	border: 5px solid #4C49F3;
+	position: absolute;
+	z-index: 1;
+	top: 50px;
+}
+
+/* Footer */
+footer {
+	background-color: #F1F0F3;
+	width: 100%;
+	height: 20em;
+	grid-area: 2 / 1 / 3 / 3;
+}
+
+.grid-container2 { /* Grid container för att få infon i footer brevid varandra*/
+	display: grid;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+	grid-template-rows: 100%;
+}
+
+
+.textbox {
+	width: 20em;
+	margin: 2em 5em 0 17em;
+}
