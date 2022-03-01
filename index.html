@@ -4,53 +4,59 @@
 Webapp för IP, Simon, Kajsa och Marikas projektarbete
 VT 2022
 
-INDEX
+INDEX hejjjj
 -->
 
 <html>
 	
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<title>Simon, IP, Marika och Kajsas app</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Simon, IP, Marika och Kajsas app</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 	
 	<div class="grid-container-side">
-		
-		<sidebar>
+		<div class="sidebar-top">
 			<img class="logo" src="logo.png" alt="logga"/>
-			<h1>Namn</h1>
+			<a href="index.html"><h1>Namn</h1></a>
 			<div class="side-text">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis. Cras feugiat velit arcu. Aenean molestie tincidunt lacinia. Vivamus ac metus leo. Maecenas vitae tortor pulvinar, aliquet metus at, tempor nisi. Morbi quis commodo mi. Etiam pulvinar consectetur lorem eu pretium. Fusce venenatis metus eu imperdiet suscipit. Mauris consequat rhoncus augue eu viverra. Ut ac mauris ullamcorper nisl tincidunt rhoncus sit amet vel elit.</p>
-				<img class="pink-smiley" src="smiley-pink-ny.png" alt="smiley face"/>
-			
-				<a class="side-link" href="#">Ämne 1</a><br>
-				<a class="side-link" href="#">Ämne 2</a><br>
-				<a class="side-link" href="#">Ämne 3</a><br>
-				<a class="side-link" href="#">Ämne 4</a><br>
-				<a class="side-link" href="#">Ämne 5</a><br>
-				<a class="side-link" href="#">Ämne 6</a><br>
-				<a class="side-link" href="#">Ämne 7</a><br>
-				<a class="side-link" href="#">Ämne 8</a><br>
-				<a class="side-link" href="#">Ämne 9</a><br>
-				<a class="side-link" href="#">Ämne 10</a><br>
+				<img class="smiley" src="smiley-pink-ny.png" alt="smiley face"/>
 			</div>
-		</sidebar> 
+		</div> 
 		
-		<main>
+		<div class="sidebar-bottom">
+			<div class="side-text">
+				<ul>
+					<li class="topic"><a class="side-link" href="#">Ett ämne</a></li>
+					<li class="topic"><a class="side-link" href="#">Ett till ämne</a></li>
+					<li class="topic"><a class="side-link" href="#">Ämne</a></li>
+					<li class="topic"><a class="side-link" href="#">Äääämne</a></li>
+					<li class="topic"><a class="side-link" href="#">Jag tror det här är ett till ämne?</a></li>
+					<li class="topic"><a class="side-link" href="#">Ämne 6</a></li>
+					<li class="topic"><a class="side-link" href="#">Ämne</a></li>
+					<li class="topic"><a class="side-link" href="#">Långt långt långt ämne </a></li>
+					<li class="topic"><a class="side-link" href="#">Ämne Ämne Ämne Ämne</a></li>
+					<li class="topic"><a class="side-link" href="#">Ämne!</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="main-top">
 			<div class="button1"><h2><a href="quiz.html">Ta vårt quiz!</a></h2></div>
 		
-			<div class="button2"><h2><a href="#">Lär dig om cybersäkerhet!</a></h2></div>
-		
+			<div class="button2"><h2><a href="#main-bottom">Lär dig om cybersäkerhet!</a></h2></div>
+		</div>
 			
+		<div class="main-bottom" id="main-bottom">
 			<div class="info-container">
 				<h3>Titel</h3>
-				<div class="box">
+				<div class="text-box">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tellus suscipit, tempus sem eget, luctus nunc. Nullam condimentum, velit ut tincidunt fringilla, mi ante commodo neque, auctor blandit tortor tortor quis orci. Sed sagittis elementum dui vel iaculis. Cras tempor quam vitae facilisis cursus. Pellentesque tempor sagittis libero, id porta nulla vulputate sed. Pellentesque in tellus et nunc tempus consectetur ut id augue. Fusce volutpat mollis dui, at pellentesque ex vestibulum vitae. Praesent neque erat, scelerisque eu convallis vitae, euismod euismod velit.<br><br>
 
 					Aliquam porttitor augue vel nisi facilisis, id pellentesque dui rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris sed neque at purus aliquam facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis est dolor, vehicula ut fermentum non, hendrerit ac dui. Aenean placerat ante sed dui tristique, ac lacinia nibh pellentesque. Duis diam nibh, tincidunt ut magna et, sagittis fermentum felis. In sed ornare est. Mauris aliquet sem a tortor dignissim dapibus. Nullam sit amet ex nec lectus ornare finibus eget nec metus. Aliquam eget congue leo.<br><br>
@@ -58,22 +64,21 @@ INDEX
 					Nunc et nibh erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum gravida, nunc ac mattis luctus, dui nunc tempus felis, quis rutrum orci diam in lectus. Nunc lacinia rutrum orci. Nam sagittis molestie diam, ac dignissim felis viverra porta. Nulla volutpat lacinia augue, non sollicitudin ante mollis vel. Duis tristique consequat ultrices. </p>
 				</div>
 			</div>
-		</main>
-	</div>
-	
-	<footer>
-		<div class="grid-container-footer">
-			<div class="textbox">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis.</p>
-			</div>
-			<div class="textbox">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis.</p>
-			</div>
-			<div class="textbox">
-				<img class="logo" src="logo.png" alt="logga"/>
-				<h1>Namn</h1>
-			</div>
 		</div>
-	</footer>
+	
+		<footer>
+			<div class="grid-container-footer">
+				<div class="footer-info">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis.</p>
+				</div>
+				<div class="footer-info">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis.</p>
+				</div>
+				<div class="footer-info">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis.</p>
+				</div>
+		</div>
+		</footer>
+	</div>
 </body>
 </html>
