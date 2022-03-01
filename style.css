@@ -16,6 +16,8 @@
 
 body {
 	margin: 0;
+	background-image: linear-gradient(to bottom, rgba(170, 216, 188, 0.8), rgba(117, 189, 145, 0.8)), url('bakgrund3.jpeg');
+	background-size: cover;
 }
 
 p { /*brödtext*/
@@ -27,59 +29,73 @@ p { /*brödtext*/
 	z-index: 99;
 }
 
+a { /*länkar*/
+	text-decoration: none;
+}
+
 /* Grid för sidebar, main och footer */
 .grid-container-side {
 	display: grid;
 	grid-template-columns: 25% 75%;
-	grid-template-rows: 100% 20%;
+	grid-template-rows: 100% 100% 20%;
 }
 /* Sidebar */
-sidebar {
+.sidebar-top {
 	background-color: #FFFCF2;
 	grid-area: 1 / 1 / 2 / 2;
 	height: 100%;
+	width: 100%;
+}
+
+.sidebar-bottom {
+	background-color: #FFFCF2;
+	grid-area: 2 / 1 / 2 / 2;
+	height: 100%;
+	width: 100%;
+	padding-top: 5vw;
 }
 
 .side-text {
-	padding: 0 5vw;
+	padding: 0 2vw;
 	text-align: center;
 }
 
 a.side-link:link{
 	font-family: 'Nunito', sans-serif;
-	font-size: 2vw;
+	font-size: 1.3vw;
 	color: #252422;
 	text-decoration: none;
 	text-align: left;
-	line-height: 3.6vw;
+	line-height: 1.5vw;
 }
 
-a.side-link:hover{
-	border-bottom: 5px dotted #252422;
+/*ämnen i sidebar*/
+ul { 
+	list-style-type: none;
+}
+	
+.topic {
+	float: left;
+	background-color: rgba(170, 216, 188, 0.5);
+	border-radius: 10vw;
+	margin: 0.2vw;
+	padding: 1vw;
+	list-style-type: none;
+}
+	
+.topic:hover,:active {
+	background-color: rgba(170, 216, 188, 0.8);
 }
 
-a.side-link:active{
-	color: #252422;
-	border-bottom: 5px dotted #252422;
-}
-
-.logo { /* Logga som används i sidebar och footer, blå*/
+.logo { /* Logga som används i sidebar (blå)*/
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1vw 0 0 0;
-	width: 30%;
+	width: 10vw;
 }
 
-.pink-smiley { /* Smiley ikonen i sidebar, rosa */
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 5em 0;
-	width: 30%;
-}
-
-h1 { /* Logo-text i sidebar & footer*/
+h1 { /* Logo-text*/
 	font-family: 'Nunito', sans-serif;
 	font-size: 3vw;
 	text-align: center;
@@ -87,16 +103,28 @@ h1 { /* Logo-text i sidebar & footer*/
 	color: #252422;
 }
 
+.smiley { /* Smiley ikonen i sidebar (rosa)*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 7vw 0;
+	width: 30%;
+}
+
 /* Main */
-main {
-	background-color: #AAD8BC;
+.main-top {
 	background-size: cover;
-	background-image: linear-gradient(to bottom, rgba(170, 216, 188, 0.8), rgba(117, 189, 145, 0.8)), url('bakgrund3.jpeg');
 	grid-area: 1 / 2 / 2 / 3;
 	
 }
 
-h2 a:link { /*Länk innuti knappar*/
+.main-bottom {
+	background-size: cover;
+	grid-area: 2 / 2 / 2 / 3;
+	
+}
+
+h2 a:link { /*Länk innuti main-knappar*/
 	font-family: 'Nunito', sans-serif;
 	font-size: 3vw;
 	color: #252422;
@@ -111,6 +139,7 @@ h2 a:hover {
 	z-index: 3;
 }
 
+/* Main-nappar */
 .button1 { /* "Quiz" knappen */
 	margin: 12vw 7vw;
 	width: 30vw;
@@ -137,7 +166,7 @@ h2 a:hover {
 	content: "";
 	width: 110%;
 	height: 160%;
-	background-color:  #FFFCF2;
+	background-color: #FFFCF2;
 	border-radius: 2vw;
 	border: 5px solid #4C49F3;
 	position: absolute;
@@ -171,7 +200,7 @@ h2 a:hover {
 	content: "";
 	width: 110%;
 	height: 160%;
-	background-color:  #FFFCF2;
+	background-color: #FFFCF2;
 	border-radius: 2vw;
 	border: 5px solid #4C49F3;
 	position: absolute;
@@ -180,9 +209,9 @@ h2 a:hover {
 	z-index: 2;
 }
 
-
+/* Inforuta */
 .info-container { /* Inforuta container */
-	margin: 25vw auto 30vw auto;
+	margin: 0vw auto 15vw auto;
 	width: 50vw;
 	position: relative;
 }
@@ -194,7 +223,7 @@ h3 { /* Titel för inforuta */
 	margin-left: 4vw;
 }
 
-.box { /* Huvudruta */
+.text-box { /* Huvudruta */
 	width: 90%;
 	height: 80%;
 	position: relative;
@@ -243,7 +272,7 @@ h3 { /* Titel för inforuta */
 	width: 100%;
 	height: 100%;
 	background-color:  #f784db;
-	padding: 0vw 0vw 0vw 0vw;
+	padding: 0vw 0vw 6vw 0vw;
 	border-radius: 2vw;
 	border: 5px solid #4C49F3;
 	position: absolute;
@@ -256,7 +285,7 @@ h3 { /* Titel för inforuta */
 	width: 100%;
 	height: 100%;
 	background-color:  #FFFCF2;
-	padding: 0vw 0vw 0vw 0em;
+	padding: 0vw 0vw 6vw 0em;
 	border-radius: 2vw;
 	border: 5px solid #4C49F3;
 	position: absolute;
@@ -295,7 +324,7 @@ a.quiz-link { /* Svarsalternativ */
 	border-radius: 2vw;
 	z-index: 5;
 	margin: 1vw 0;
-	padding: 1vw;
+	padding: 2vw;
 	transition: 0.5s linear;
 }
 
@@ -309,7 +338,7 @@ footer {
 	background-color: #EDE8E4;
 	width: 100%;
 	height: 20vw;
-	grid-area: 2 / 1 / 3 / 3;
+	grid-area: 3 / 1 / 3 / 3;
 }
 
 .grid-container-footer { /* Grid container för att få infon i footer i 3 columner*/
@@ -319,7 +348,209 @@ footer {
 }
 
 
-.textbox {
+.footer-info {
 	width: 20vw;
 	margin: 2vw 0vw 0vw 10vw;
+}
+
+
+/* Media Queries - surfplatta */
+@media screen and (max-width: 1000px) {
+	
+	p { 
+		font-size: 1.6vw;
+		line-height: 1.9vw;
+	}
+	
+	h1 {
+		font-size: 4vw;
+	}
+	
+	a.side-link:link{
+		font-size: 2vw;
+		text-decoration: none;
+		line-height: 2vw;
+	}
+	
+	h2 a:link { 
+		font-size: 4vw;
+	}
+
+	h2 a:hover {
+		border-bottom: 5px dotted #252422;
+	}
+	
+	.button1 { 
+		height: 4vw;
+	}
+	
+	.button2 { 
+		margin: 14vw 28vw;
+		height: 4vw;
+		padding: 1vw 1vw 5vw 3vw;
+	}
+	
+	.info-container { 
+		margin: -10vw auto 16vw auto;
+	}
+	
+	h3 { 
+		font-size: 4.5vw;
+		margin-left: 4.5vw;
+	}
+	
+	.text-box { 
+		height: 40%;
+	}
+	
+	.info-container:before{ 
+		height: 90%;
+		top: 75px;
+	}
+
+	.info-container:after{ /* Inforuta vit */
+		height: 90%;
+		top: 50px;
+	}
+
+}
+
+/* Media Queries - telefon */
+@media screen and (max-width: 650px) {
+	
+	.grid-container-side {
+		grid-template-columns: 100%;
+		grid-template-rows: 80vw 100vw 120vw 200vw 20vw;
+	}
+	
+	/*sidebar*/
+	.sidebar-top {
+		grid-area: 1 / 1 / 1 / 1;
+	}
+	
+	h1 {
+		font-size: 12vw;
+		display: inline;
+		padding-left: 5vw;
+	}
+	
+	p { 
+		font-size: 3.5vw;
+		line-height: 4.5vw;
+	}
+	
+	.logo { 
+		display: inline;
+		margin: 0;
+		padding: 10vw 0 0 20vw;
+		width: 18vw;
+	}
+	
+	.smiley {
+		display: none;
+	}
+	
+	.main-top {
+		grid-area: 2 / 1 / 2 / 1;
+	}
+	
+	a.side-link:link{
+		font-size: 3vw;
+		line-height: 4.3vw;
+	}
+	
+	h2 a:link { 
+		font-size: 10vw;
+	}
+
+	h2 a:hover {
+		border-bottom: 5px dotted #252422;
+	}
+	
+	.button1 { 
+		margin: 12vw 5vw;
+		width: 70%;
+		height: 10vw;
+		padding: 1vw 2vw 2vw 5vw;
+	}
+	.button1:before{
+		border-radius: 3vw;
+	}
+	.button1:after{ 
+		border-radius: 3vw;
+	}
+	.button2 { 
+		margin: 20vw 5vw;
+		width: 70%;
+		height: 18vw;
+		padding: 1vw 2vw 2vw 5vw;
+	}
+	.button2:before{ 
+		border-radius: 3vw;
+		top: 25px;
+		left: 25px;
+	}
+	.button2:after{ 
+		border-radius: 3vw;
+	}
+	
+	.sidebar-bottom {
+		grid-area: 3 / 1 / 3 / 1;
+		background-color: transparent;
+	}
+	
+	a.side-link:link{
+		font-size: 4vw;
+		line-height: 9vw;
+	}
+	
+	.topic {
+		margin: 1vw;
+		padding: 2vw;
+	}
+	
+	.topic:hover,:active {
+		background-color: rgba(255, 252, 242, 0.5);
+		margin: 1vw;
+		padding: 2vw;
+	}
+	
+	.main-bottom {
+		grid-area: 4 / 1 / 4 / 1;
+	}
+	
+	.info-container {
+		margin: -10vw auto 16vw auto;
+		width: 70vw;
+		height: 150vw;
+	}
+	
+	h3 { 
+		font-size: 7vw;
+		margin-left: 0vw;
+	}
+	
+	.text-box {
+		height: 40%;
+	}
+	
+	.info-container:before{ 
+		height: 90%;
+		border-radius: 3vw;
+		top: 75px;
+	}
+
+	.info-container:after{ 
+		height: 90%;
+		border-radius: 3vw;
+		top: 50px;
+	}
+	
+	footer {
+		grid-area: 5 / 1 / 5 / 1;
+	}
+	
+	.footer-text {
+		font-size: 5vw;
+	}
 }
