@@ -10,56 +10,84 @@ QUIZ
 <html>
 	
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<title>Simon, IP, Marika och Kajsas app</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Simon, IP, Marika och Kajsas app</title>
+	<script defer src = "indexQuiz.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 	
 	<div class="grid-container-side">
-		
-		<sidebar>
+		<div class="sidebar-top">
 			<img class="logo" src="logo.png" alt="logga"/>
-			<h1>Namn</h1>
+			<a href="index.html"><h1>Namn</h1></a>
 			<div class="side-text">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis. Cras feugiat velit arcu. Aenean molestie tincidunt lacinia. Vivamus ac metus leo. Maecenas vitae tortor pulvinar, aliquet metus at, tempor nisi. Morbi quis commodo mi. Etiam pulvinar consectetur lorem eu pretium. Fusce venenatis metus eu imperdiet suscipit. Mauris consequat rhoncus augue eu viverra. Ut ac mauris ullamcorper nisl tincidunt rhoncus sit amet vel elit.</p>
-				<img class="pink-smiley" src="smiley-pink-ny.png" alt="smiley face"/>
-			
+				<img class="smiley" src="smiley-pink-ny.png" alt="smiley face"/>
 			</div>
-		</sidebar> 
+		</div> 
 		
-		<main>
+		<div class="main-top">
 			
 			<div class="quiz-container">
 				<div class="question-box">
-					<h4>Fråga X</h4>
-					<p>Exempelfråga?</p></div>
-				<div class="answer-box"><a href="#" class="quiz-link">Svar 1</a></div>
-				<div class="answer-box"><a href="#" class="quiz-link">Svar 2</a></div>
-				<div class="answer-box"><a href="#" class="quiz-link">Svar 3</a></div>
-				<div class="answer-box"><a href="#" class="quiz-link">Svar 4</a></div>
+					<div id="counter" class="hide">test</div>
+					<div id="score" class="hide">test</div>
+										<div class="controls">
+					<button id="start-btn" class="start-btn btn">Start</button>
+				</div>
+					
+					<div id="question-container" class="hide">
+						<div class= "questions" id="questions">Question</div>
+					
+					
+					
+					<div id="answer-btn" class="btn-grid">
+						<div class="collumn-first">
+							<button class="btn">Svar 1</button>
+							<button class="btn">Svar 2</button>
+						</div>
+						<div class="collumn-second">
+							<button class="btn">Svar 3</button>
+							<button class="btn">Svar 4</button>
+						</div>
+						</div>
+						
+						<div class="controls">
+					<button id="next-btn" class="next-btn btn hide">Nästa</button>
+				</div>
+					</div>
+					
+				
+
+				</div>
 			</div>
-			
-		</main>
-	</div>
 	
-	<footer>
-		<div class="grid-container-footer">
-			<div class="textbox">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis.</p>
-			</div>
-			<div class="textbox">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis.</p>
-			</div>
-			<div class="textbox">
-				<img class="logo" src="logo.png" alt="logga"/>
-				<h1>Namn</h1>
+
 			</div>
 		</div>
-	</footer>
+	</div>
+	
+	
+	
+	
+		<footer>
+			<div class="grid-container-footer">
+				<div class="footer-info">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis.</p>
+				</div>
+				<div class="footer-info">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis.</p>
+				</div>
+				<div class="footer-info">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius nisl a interdum aliquam. Mauris lobortis malesuada massa, at dapibus nisl pharetra quis.</p>
+				</div>
+			</div>
+		</footer>
+	
 </body>
 </html>

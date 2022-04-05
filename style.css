@@ -127,7 +127,7 @@ h1 { /* Logo-text*/
 
 h2 a:link { /*Länk innuti main-knappar*/
 	font-family: 'Nunito', sans-serif;
-	font-size: 3vw;
+	font-size: 2.5vw;
 	color: #252422;
 	text-decoration: none;
 	position: relative;
@@ -144,7 +144,7 @@ h2 a:hover {
 .button1 { /* "Quiz" knappen */
 	margin: 12vw 7vw;
 	width: 30vw;
-	height: 2vw;
+	height: 5vw;
 	padding: 1vw 1vw 2vw 3vw;
 	position: relative;
 	text-align: center;
@@ -179,8 +179,8 @@ h2 a:hover {
 .button2 { /* "Lär dig mer" knappen */
 	margin: 12vw 25vw;
 	width: 30vw;
-	height: 2vw;
-	padding: 1vw 1vw 4vw 3vw;
+	height: 5vw;
+	padding: 0.1vw 1vw 4vw 3vw;
 	position: relative;
 	text-align: center;
 }
@@ -293,7 +293,7 @@ h3 { /* Titel för inforuta */
 /* quiz */
 .quiz-container {
 	width: 40%;
-	height: 50%;
+	height: 70%;
 	position: absolute;
 	z-index: 2;
 	padding: 3vw;
@@ -328,7 +328,7 @@ h3 { /* Titel för inforuta */
 }
 
 .question-box {
-	background-color: #EDE8E4;
+	/** background-color: #EDE8E4; **/
 	border-radius: 2vw;
 	padding: 1vw;
 	position: relative;
@@ -351,21 +351,6 @@ a.quiz-link { /* Svarsalternativ */
 	text-decoration: none;
 }
 
-.answer-box {
-	background-color: rgb(170, 216, 188, 0.2);
-	position: relative;
-	border-radius: 2vw;
-	z-index: 5;
-	margin: 1vw 0;
-	padding: 2vw;
-	transition: 0.5s linear;
-}
-
-.answer-box:hover {
-	background-color: rgb(170, 216, 188, 0.7);
-	transition: 0.5s linear;
-}
-
 /* Footer */
 footer {
 	background-color: #EDE8E4;
@@ -386,6 +371,92 @@ footer {
 	margin: 2vw 0vw 0vw 10vw;
 }
 
+/** simons css **/
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	font-family: 'Nunito', 'Roboto', sans-serif;
+}
+
+.btn-grid {
+	grid-gap: 10px;
+	gap: 10px;
+	marign: 15px 0;
+	display: grid;
+	justify-content: center;
+}
+
+.btn {
+	color: #252422;
+	font: "Nunito";
+	font-size: 16px;
+	font-weight: bold;
+	width: flex;
+	height: flex;
+	border: 3px solid #F784DB;
+	border-radius: 2vw;	
+	background-color: rgb(170, 216, 188, 0.2);
+	position: relative;
+	z-index: 5;
+	margin: 1vw 0;
+	padding: 0.5vw;
+	transition: 0.3s linear;
+}
+
+.btn:hover{
+	background-color: #AAD8BC;
+	cursor: pointer;
+	transition: 0.3s linear;
+}
+
+.btn.correct {
+	background-color: palegreen;
+	color: #252422;
+}
+
+.btn.wrong {
+	background-color: palevioletred;
+	color: #252422;
+}
+
+.start-btn, .next-btn {
+	margin: 25px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+.controls {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hide {
+	display: none;
+}
+
+.counter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.questions {
+	height: flex;
+	width: flex;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.5vw;
+	color: #252422;
+	margin: 0vw;
+	padding: 2vw;
+	border-bottom: 5px dotted #252422;
+	text-align: center;
+}
+
+
+/** Slut på simons CSS **/
 
 /* Media Queries - surfplatta */
 @media screen and (max-width: 1100px) {
@@ -406,7 +477,7 @@ footer {
 	}
 	
 	h2 a:link { 
-		font-size: 4vw;
+		font-size: 2vw;
 	}
 
 	h2 a:hover {
