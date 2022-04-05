@@ -1,0 +1,123 @@
+/* CSS Document */
+
+/* Google fonts:
+	Brödtext: font-family: 'Nunito', sans-serif;
+	Rubriker: font-family: 'Roboto', sans-serif; */
+
+/* Färgpalett:
+	Off-white: #FFFCF2
+	Ljusgrå: #F1F0F3
+	Mint: #AAD8BC
+	Rosa: #F784DB
+	Blå: #4C49F3
+	Svart: #252422 */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	font-family: 'Nunito', 'Roboto', sans-serif;
+	
+	
+}
+
+
+body {
+	padding: 0;
+	margin: 5px;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logoQuiz {
+	height: 84px;
+	width: 101px;
+	margin-left: 25px;
+}
+
+.container {
+	width: 800px;
+	max-width: 400px;
+	background-color: #AAD8BC;
+	border-radius: 25px;
+	padding: 10px;
+	box-shadow: 0 0 10px 2px;
+	
+}
+
+
+.btn-grid {
+	grid-gap: 10px;
+	gap: 10px;
+	marign: 15px 0;
+	display: grid;
+	justify-content: center;
+	
+}
+
+.btn {
+	color:dimgray;
+	font: "Nunito";
+	font-size: 16px;
+	font-weight: bold;
+	width: flex;
+	height: flex;
+	min-width: 150px;
+	max-width: 300px;
+	max-height: 150px;
+	background-color: #FFFCF2;
+	border-color: #F784DB;
+	border-radius: 5px;	
+	
+}
+
+.btn:hover{
+	border-color:#4C49F3; 
+	border-width: 2px;
+	cursor: pointer;
+}
+
+.btn.correct {
+	background-color: palegreen;
+	color: #252422;
+}
+
+.btn.wrong {
+	background-color: palevioletred;
+	color: #252422;
+}
+
+.start-btn, .next-btn {
+	margin: 25px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hide {
+	display: none;
+}
+
+.counter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.questions {
+	background: #FFFCF2;
+	height: flex;
+	width: flex;
+	margin: 35px;
+	padding: 10px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px 2px;
+	
+}
