@@ -477,7 +477,7 @@ footer {
 	}
 	
 	h2 a:link { 
-		font-size: 2vw;
+		font-size: 4vw;
 	}
 
 	h2 a:hover {
@@ -486,12 +486,13 @@ footer {
 	
 	.button1 { 
 		height: 4vw;
+		padding: 1vw 1vw 6vw 3vw;
 	}
 	
 	.button2 { 
-		margin: 14vw 28vw;
-		height: 4vw;
-		padding: 1vw 1vw 5vw 3vw;
+		margin: 11vw 28vw;
+		height: 11vw;
+		padding: 1vw 1vw 6vw 3vw;
 	}
 	
 	.info-container { 
@@ -566,7 +567,7 @@ footer {
 	}
 	
 	h2 a:link { 
-		font-size: 10vw;
+		font-size: 8vw;
 	}
 
 	h2 a:hover {
@@ -577,7 +578,7 @@ footer {
 		margin: 12vw 5vw;
 		width: 70%;
 		height: 10vw;
-		padding: 1vw 2vw 2vw 5vw;
+		padding: 1vw 1vw 12vw 5vw;
 	}
 	.button1:before{
 		border-radius: 3vw;
@@ -589,7 +590,7 @@ footer {
 		margin: 20vw 5vw;
 		width: 70%;
 		height: 18vw;
-		padding: 1vw 2vw 2vw 5vw;
+		padding: 1vw 1vw 20vw 5vw;
 	}
 	.button2:before{ 
 		border-radius: 3vw;
