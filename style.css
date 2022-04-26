@@ -31,6 +31,11 @@ p { /*brödtext*/
 
 a { /*länkar*/
 	text-decoration: none;
+	color: #4C49F3;
+}
+
+a:hover {
+	color: #F784DB;
 }
 
 /* Grid för sidebar, main och footer */
@@ -292,8 +297,8 @@ h3 { /* Titel för inforuta */
 
 /* quiz */
 .quiz-container {
-	width: 40%;
-	height: 70%;
+	width: 45%;
+	height: 75%;
 	position: absolute;
 	z-index: 2;
 	padding: 3vw;
@@ -419,7 +424,15 @@ footer {
 	color: #252422;
 }
 
-.start-btn, .next-btn {
+.start-btn {
+	margin: 25px;
+	font-size: 3rem;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+
+.next-btn {
 	margin: 25px;
 	font-size: 1.2rem;
 	font-weight: bold;
@@ -477,7 +490,7 @@ footer {
 	}
 	
 	h2 a:link { 
-		font-size: 4vw;
+		font-size: 2vw;
 	}
 
 	h2 a:hover {
@@ -486,13 +499,12 @@ footer {
 	
 	.button1 { 
 		height: 4vw;
-		padding: 1vw 1vw 6vw 3vw;
 	}
 	
 	.button2 { 
-		margin: 11vw 28vw;
-		height: 11vw;
-		padding: 1vw 1vw 6vw 3vw;
+		margin: 14vw 28vw;
+		height: 4vw;
+		padding: 1vw 1vw 5vw 3vw;
 	}
 	
 	.info-container { 
@@ -567,7 +579,7 @@ footer {
 	}
 	
 	h2 a:link { 
-		font-size: 8vw;
+		font-size: 10vw;
 	}
 
 	h2 a:hover {
@@ -578,7 +590,7 @@ footer {
 		margin: 12vw 5vw;
 		width: 70%;
 		height: 10vw;
-		padding: 1vw 1vw 12vw 5vw;
+		padding: 1vw 2vw 2vw 5vw;
 	}
 	.button1:before{
 		border-radius: 3vw;
@@ -590,7 +602,7 @@ footer {
 		margin: 20vw 5vw;
 		width: 70%;
 		height: 18vw;
-		padding: 1vw 1vw 20vw 5vw;
+		padding: 1vw 2vw 2vw 5vw;
 	}
 	.button2:before{ 
 		border-radius: 3vw;
