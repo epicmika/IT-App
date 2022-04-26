@@ -31,10 +31,19 @@ p { /*brödtext*/
 
 a { /*länkar*/
 	text-decoration: none;
-	color: #4C49F3;
+	color: #252422;
 }
 
 a:hover {
+	color: #252422;
+}
+
+a.text-link { /*länkar i text*/
+	text-decoration: none;
+	color: #4C49F3;
+}
+
+a.text-link:hover {
 	color: #F784DB;
 }
 
@@ -72,6 +81,7 @@ a.side-link:link{
 	text-decoration: none;
 	text-align: left;
 	line-height: 1.5vw;
+	color: #252422;
 }
 
 /*ämnen i sidebar*/
@@ -86,11 +96,13 @@ ul {
 	margin: 0.2vw;
 	padding: 1vw;
 	list-style-type: none;
+	color: #252422;
 }
 	
 .topic:hover,
 .topic:active {
 	background-color: rgba(170, 216, 188, 0.8);
+	color: #252422;
 }
 
 .logo { /* Logga som används i sidebar (blå)*/
@@ -246,7 +258,7 @@ h3 { /* Titel för inforuta */
 	border-radius: 2vw;
 	border: 5px solid #4C49F3;
 	position: absolute;
-	top: 105px;
+	top: 125px;
 	left: -25px;
 	z-index: 1;
 }
@@ -261,18 +273,16 @@ h3 { /* Titel för inforuta */
 	border: 5px solid #4C49F3;
 	position: absolute;
 	z-index: 1;
-	top: 80px;
+	top: 100px;
 }
 
 .scroll {
 	display: block;
-	border: 0px solid red;
 	padding: 5px;
-	margin-top: 5px;
+	margin-top: 0px;
 	width: 100%;
 	height: 100%;
 	overflow-y: scroll;
-
 }
 
 .scroll::-webkit-scrollbar {
@@ -487,6 +497,7 @@ footer {
 		font-size: 2vw;
 		text-decoration: none;
 		line-height: 2vw;
+		color: #252422;
 	}
 	
 	h2 a:link { 
@@ -576,6 +587,7 @@ footer {
 	a.side-link:link{
 		font-size: 3vw;
 		line-height: 4.3vw;
+		color: #252422;
 	}
 	
 	h2 a:link { 
@@ -621,11 +633,13 @@ footer {
 	a.side-link:link{
 		font-size: 4vw;
 		line-height: 9vw;
+		color: #252422;
 	}
 	
 	.topic {
 		margin: 1vw;
 		padding: 2vw;
+		color: #252422;
 	}
 	
 	.topic:hover,
@@ -633,6 +647,7 @@ footer {
 		background-color: rgba(255, 252, 242, 0.5);
 		margin: 1vw;
 		padding: 2vw;
+		color: #252422;
 	}
 	
 	.main-bottom {

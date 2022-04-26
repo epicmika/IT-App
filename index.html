@@ -16,6 +16,7 @@ INDEX
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+	<script defer src = "sidebar.js"></script>
 </head>
 
 <body>
@@ -32,17 +33,14 @@ INDEX
 		
 		<div class="sidebar-bottom">
 			<div class="side-text">
-				<ul>
-					<li class="topic"><a class="side-link" href="#">Ett ämne</a></li>
-					<li class="topic"><a class="side-link" href="#">Ett till ämne</a></li>
-					<li class="topic"><a class="side-link" href="#">Ämne</a></li>
-					<li class="topic"><a class="side-link" href="#">Äääämne</a></li>
-					<li class="topic"><a class="side-link" href="#">Jag tror det här är ett till ämne?</a></li>
-					<li class="topic"><a class="side-link" href="#">Ämne 6</a></li>
-					<li class="topic"><a class="side-link" href="#">Ämne</a></li>
-					<li class="topic"><a class="side-link" href="#">Långt långt långt ämne </a></li>
-					<li class="topic"><a class="side-link" href="#">Ämne Ämne Ämne Ämne</a></li>
-					<li class="topic"><a class="side-link" href="#">Ämne!</a></li>
+				<ul id="topics">
+					<li class="topic"><a id="topic1" class="side-link" href="#main-bottom">Säkerhet på grundnivå</a></li>
+					<li class="topic"><a id="topic2" class="side-link" href="#main-bottom">Digital sårbarhet</a></li>
+					<li class="topic"><a id="topic3" class="side-link" href="#main-bottom">Antivirus</a></li>
+					<li class="topic"><a id="topic4" class="side-link" href="#main-bottom">Säkerhetskopior</a></li>
+					<li class="topic"><a id="topic5" class="side-link" href="#main-bottom">Föräldrar</a></li>
+					<li class="topic"><a id="topic6" class="side-link" href="#main-bottom">IT-Brott</a></li>
+					<li class="topic"><a id="topic7" class="side-link" href="#main-bottom">Agera säkert på nätet</a></li>
 				</ul>
 			</div>
 		</div>
@@ -55,14 +53,10 @@ INDEX
 			
 		<div class="main-bottom" id="main-bottom">
 			<div class="info-container">
-				<h3>Titel</h3>
+				<h3 id="title">Säkerhet på grundnivå</h3>
 				<div class="text-box">
 					<div class="scroll">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec tellus suscipit, tempus sem eget, luctus nunc. Nullam condimentum, velit ut tincidunt fringilla, mi ante commodo neque, auctor blandit tortor tortor quis orci. Sed sagittis elementum dui vel iaculis. Cras tempor quam vitae facilisis cursus. Pellentesque tempor sagittis libero, id porta nulla vulputate sed. Pellentesque in tellus et nunc tempus consectetur ut id augue. Fusce volutpat mollis dui, at pellentesque ex vestibulum vitae. Praesent neque erat, scelerisque eu convallis vitae, euismod euismod velit.<br><br>
-
-					Aliquam porttitor augue vel nisi facilisis, id pellentesque dui rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris sed neque at purus aliquam facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis est dolor, vehicula ut fermentum non, hendrerit ac dui. Aenean placerat ante sed dui tristique, ac lacinia nibh pellentesque. Duis diam nibh, tincidunt ut magna et, sagittis fermentum felis. In sed ornare est. Mauris aliquet sem a tortor dignissim dapibus. Nullam sit amet ex nec lectus ornare finibus eget nec metus. Aliquam eget congue leo.<br><br>
-
-					Nunc et nibh erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum gravida, nunc ac mattis luctus, dui nunc tempus felis, quis rutrum orci diam in lectus. Nunc lacinia rutrum orci. Nam sagittis molestie diam, ac dignissim felis viverra porta. Nulla volutpat lacinia augue, non sollicitudin ante mollis vel. Duis tristique consequat ultrices. </p>
+					<p id="info">Begreppet säkerhet är inte något svårt egentligen. Allt börjar med kunskap och allmänbildning om hur saker och ting funkar. Att känna sig säker är nog något majoriteten av alla vill känna. Det finns olika sätt att skydda sig på för att öka ens säkerhet.</p>
 						</div>
 				</div>
 			</div>
@@ -73,8 +67,8 @@ INDEX
 				<div class="footer-info">
 					<h2>Använda resurser:</h2>
 					<p>
-						Icon pack: <a href="https://ikonate.com/Ikonate">Ikonate</a>
-						Bakgrundsbild: <a href="https://www.pexels.com/sv-se/">Pexels</a>
+						Icon pack: <a class="text-link" href="https://ikonate.com/Ikonate">Ikonate</a>
+						Bakgrundsbild: <a class="text-link" href="https://www.pexels.com/sv-se/">Pexels</a>
 					</p>
 				</div>
 				<div class="footer-info">

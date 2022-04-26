@@ -22,7 +22,7 @@ nextBtn.addEventListener('click', () => {
 		counterElement.classList.add('hide')
 		questionContainerElement.classList.add('hide')
 		
-		if (score == currentQuestionIndex - 1){
+		if (score == currentQuestionIndex){
 		scoreElement.innerText = "Slut på frågor! Du är ett säkerhets geni! Du fick " + score + " utav " + questionsLength + " poäng!"
 		}
 		else if (score >= currentQuestionIndex / 2){
