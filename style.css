@@ -168,7 +168,7 @@ h2 a:hover {
 }
 
 
-.button1:before{ /* "Quiz" knappen: Rosa skugga */
+.button1:before{ /* "Quiz" knappen: Rosa skugga */ /* */
 	content: "";
 	width: 110%;
 	height: 160%;
